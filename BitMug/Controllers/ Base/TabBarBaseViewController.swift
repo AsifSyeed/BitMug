@@ -11,8 +11,6 @@ class TabBarBaseViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemBackground
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: OffersViewController())
@@ -29,8 +27,8 @@ class TabBarBaseViewController: UITabBarController {
         vc3.title = "Account"
         vc4.title = "Menu"
         
-        tabBar.backgroundColor = .systemRed
-        tabBar.tintColor = .label
+        tabBar.backgroundColor = .systemTeal
+        tabBar.tintColor = .white
         
         setViewControllers([vc1, vc2, vc3, vc4], animated: true)
     }

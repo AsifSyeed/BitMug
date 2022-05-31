@@ -18,6 +18,9 @@
 		87321CD02844BFE10051C298 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CCF2844BFE10051C298 /* OffersViewController.swift */; };
 		87321CD22844BFE90051C298 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CD12844BFE90051C298 /* AccountViewController.swift */; };
 		87321CD42844BFEF0051C298 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CD32844BFEF0051C298 /* MenuViewController.swift */; };
+		87FD6C592845C22D006B2E57 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD6C582845C22D006B2E57 /* extension.swift */; };
+		87FD6C5C2845CE49006B2E57 /* DashboardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD6C5B2845CE49006B2E57 /* DashboardUIView.swift */; };
+		87FD6C5E2845E14B006B2E57 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD6C5D2845E14B006B2E57 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		87321CCF2844BFE10051C298 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		87321CD12844BFE90051C298 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		87321CD32844BFEF0051C298 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		87FD6C582845C22D006B2E57 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		87FD6C5B2845CE49006B2E57 /* DashboardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUIView.swift; sourceTree = "<group>"; };
+		87FD6C5D2845E14B006B2E57 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 		87321CB22844BCF10051C298 /* BitMug */ = {
 			isa = PBXGroup;
 			children = (
+				87FD6C5A2845CE18006B2E57 /* Views */,
+				87FD6C572845C213006B2E57 /* Resources */,
 				87321CCA2844BD430051C298 /* Controllers */,
 				87321CB32844BCF10051C298 /* AppDelegate.swift */,
 				87321CB52844BCF10051C298 /* SceneDelegate.swift */,
@@ -104,6 +112,23 @@
 				87321CCD2844BEA00051C298 /* TabBarBaseViewController.swift */,
 			);
 			path = " Base";
+			sourceTree = "<group>";
+		};
+		87FD6C572845C213006B2E57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87FD6C582845C22D006B2E57 /* extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87FD6C5A2845CE18006B2E57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87FD6C5B2845CE49006B2E57 /* DashboardUIView.swift */,
+				87FD6C5D2845E14B006B2E57 /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +205,9 @@
 				87321CB82844BCF10051C298 /* HomeViewController.swift in Sources */,
 				87321CD02844BFE10051C298 /* OffersViewController.swift in Sources */,
 				87321CD22844BFE90051C298 /* AccountViewController.swift in Sources */,
+				87FD6C5E2845E14B006B2E57 /* CollectionViewTableViewCell.swift in Sources */,
+				87FD6C5C2845CE49006B2E57 /* DashboardUIView.swift in Sources */,
+				87FD6C592845C22D006B2E57 /* extension.swift in Sources */,
 				87321CB42844BCF10051C298 /* AppDelegate.swift in Sources */,
 				87321CB62844BCF10051C298 /* SceneDelegate.swift in Sources */,
 				87321CBE2844BCF10051C298 /* BitMug.xcdatamodeld in Sources */,
