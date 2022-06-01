@@ -14,6 +14,7 @@ class DashboardUIView: UIView {
         topView.contentMode = .scaleAspectFill
         topView.clipsToBounds = true
         topView.backgroundColor = .white
+        topView.translatesAutoresizingMaskIntoConstraints = false
         
         return topView
     }()
@@ -27,6 +28,7 @@ class DashboardUIView: UIView {
         view.layer.cornerRadius = view.frame.size.width/2
         view.layer.borderColor = CGColor(gray: 9.0, alpha: 0.1)
         view.layer.borderWidth = 5.0
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
@@ -39,7 +41,12 @@ class DashboardUIView: UIView {
     }
     
     private func applyConstraints() {
-        
+        NSLayoutConstraint.activate(
+            [
+                balanceView.centerXAnchor.constraint(equalTo: topHeaderView.centerXAnchor),
+                balanceView.centerYAnchor.constraint(equalTo: topHeaderView.centerYAnchor)
+            ]
+        )
     }
     
     override func layoutSubviews() {
