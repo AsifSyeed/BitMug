@@ -14,13 +14,11 @@
 		87321CBE2844BCF10051C298 /* BitMug.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87321CBC2844BCF10051C298 /* BitMug.xcdatamodeld */; };
 		87321CC02844BCF30051C298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87321CBF2844BCF30051C298 /* Assets.xcassets */; };
 		87321CC32844BCF30051C298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87321CC12844BCF30051C298 /* LaunchScreen.storyboard */; };
-		87321CCE2844BEA00051C298 /* TabBarBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CCD2844BEA00051C298 /* TabBarBaseViewController.swift */; };
-		87321CD02844BFE10051C298 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CCF2844BFE10051C298 /* OffersViewController.swift */; };
-		87321CD22844BFE90051C298 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CD12844BFE90051C298 /* AccountViewController.swift */; };
-		87321CD42844BFEF0051C298 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87321CD32844BFEF0051C298 /* MenuViewController.swift */; };
-		87FD6C592845C22D006B2E57 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD6C582845C22D006B2E57 /* extension.swift */; };
-		87FD6C5C2845CE49006B2E57 /* DashboardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD6C5B2845CE49006B2E57 /* DashboardUIView.swift */; };
-		87FD6C5E2845E14B006B2E57 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD6C5D2845E14B006B2E57 /* CollectionViewTableViewCell.swift */; };
+		87DABBF62848B6F800D70985 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF52848B6F800D70985 /* MainTabBarController.swift */; };
+		87DABBFA2848B74A00D70985 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF72848B74A00D70985 /* OffersViewController.swift */; };
+		87DABBFB2848B74A00D70985 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF82848B74A00D70985 /* AccountViewController.swift */; };
+		87DABBFC2848B74A00D70985 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF92848B74A00D70985 /* MenuViewController.swift */; };
+		87DABBFE2848BAA300D70985 /* UserProfileMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBFD2848BAA300D70985 /* UserProfileMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +31,11 @@
 		87321CBF2844BCF30051C298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87321CC22844BCF30051C298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87321CC42844BCF30051C298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87321CCD2844BEA00051C298 /* TabBarBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBaseViewController.swift; sourceTree = "<group>"; };
-		87321CCF2844BFE10051C298 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
-		87321CD12844BFE90051C298 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		87321CD32844BFEF0051C298 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		87FD6C582845C22D006B2E57 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
-		87FD6C5B2845CE49006B2E57 /* DashboardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUIView.swift; sourceTree = "<group>"; };
-		87FD6C5D2845E14B006B2E57 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		87DABBF52848B6F800D70985 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		87DABBF72848B74A00D70985 /* OffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		87DABBF82848B74A00D70985 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		87DABBF92848B74A00D70985 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		87DABBFD2848BAA300D70985 /* UserProfileMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +68,11 @@
 		87321CB22844BCF10051C298 /* BitMug */ = {
 			isa = PBXGroup;
 			children = (
-				87FD6C5A2845CE18006B2E57 /* Views */,
-				87FD6C572845C213006B2E57 /* Resources */,
+				87DABBF42848B6D200D70985 /* Views */,
 				87321CCA2844BD430051C298 /* Controllers */,
 				87321CB32844BCF10051C298 /* AppDelegate.swift */,
 				87321CB52844BCF10051C298 /* SceneDelegate.swift */,
+				87DABBF52848B6F800D70985 /* MainTabBarController.swift */,
 				87321CB92844BCF10051C298 /* Main.storyboard */,
 				87321CBF2844BCF30051C298 /* Assets.xcassets */,
 				87321CC12844BCF30051C298 /* LaunchScreen.storyboard */,
@@ -89,7 +85,6 @@
 		87321CCA2844BD430051C298 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				87321CCC2844BE5B0051C298 /*  Base */,
 				87321CCB2844BE200051C298 /* General */,
 			);
 			path = Controllers;
@@ -98,35 +93,18 @@
 		87321CCB2844BE200051C298 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				87DABBF82848B74A00D70985 /* AccountViewController.swift */,
+				87DABBF92848B74A00D70985 /* MenuViewController.swift */,
+				87DABBF72848B74A00D70985 /* OffersViewController.swift */,
 				87321CB72844BCF10051C298 /* HomeViewController.swift */,
-				87321CCF2844BFE10051C298 /* OffersViewController.swift */,
-				87321CD12844BFE90051C298 /* AccountViewController.swift */,
-				87321CD32844BFEF0051C298 /* MenuViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
 		};
-		87321CCC2844BE5B0051C298 /*  Base */ = {
+		87DABBF42848B6D200D70985 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				87321CCD2844BEA00051C298 /* TabBarBaseViewController.swift */,
-			);
-			path = " Base";
-			sourceTree = "<group>";
-		};
-		87FD6C572845C213006B2E57 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				87FD6C582845C22D006B2E57 /* extension.swift */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		87FD6C5A2845CE18006B2E57 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				87FD6C5B2845CE49006B2E57 /* DashboardUIView.swift */,
-				87FD6C5D2845E14B006B2E57 /* CollectionViewTableViewCell.swift */,
+				87DABBFD2848BAA300D70985 /* UserProfileMenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,17 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DABBFE2848BAA300D70985 /* UserProfileMenuView.swift in Sources */,
 				87321CB82844BCF10051C298 /* HomeViewController.swift in Sources */,
-				87321CD02844BFE10051C298 /* OffersViewController.swift in Sources */,
-				87321CD22844BFE90051C298 /* AccountViewController.swift in Sources */,
-				87FD6C5E2845E14B006B2E57 /* CollectionViewTableViewCell.swift in Sources */,
-				87FD6C5C2845CE49006B2E57 /* DashboardUIView.swift in Sources */,
-				87FD6C592845C22D006B2E57 /* extension.swift in Sources */,
+				87DABBFA2848B74A00D70985 /* OffersViewController.swift in Sources */,
+				87DABBFB2848B74A00D70985 /* AccountViewController.swift in Sources */,
 				87321CB42844BCF10051C298 /* AppDelegate.swift in Sources */,
+				87DABBF62848B6F800D70985 /* MainTabBarController.swift in Sources */,
 				87321CB62844BCF10051C298 /* SceneDelegate.swift in Sources */,
 				87321CBE2844BCF10051C298 /* BitMug.xcdatamodeld in Sources */,
-				87321CCE2844BEA00051C298 /* TabBarBaseViewController.swift in Sources */,
-				87321CD42844BFEF0051C298 /* MenuViewController.swift in Sources */,
+				87DABBFC2848B74A00D70985 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,74 +9,57 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    private var headerView: DashboardUIView?
-    
-    private var userButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("nemes1s\nUSR4421", for: .normal)
-        button.layer.borderWidth = 1
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.borderColor = UIColor.clear.cgColor
-        button.titleLabel?.lineBreakMode = .byWordWrapping
-
-        return button
-    }()
-    
-    private let homeFeedTable: UITableView = {
-        let table = UITableView(frame: .zero, style: .grouped)
-        table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: "CollectionViewTableViewCell")
-        return table
-    }()
+    var profileNavBar: UIView = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        
+        return $0
+    }(UserProfileMenuView(text: "nemes1s"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
-        view.addSubview(homeFeedTable)
         
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.backgroundColor = .systemRed
-        navigationItem.rightBarButtonItem = UIBarButtonItem.navBarButtonItem(self, imageName: "bitcoinsign.circle.fill")
-        navigationItem.leftBarButtonItem = UIBarButtonItem.navBarButtonItem(self, imageName: "person.circle.fill")
-
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
-        homeFeedTable.delegate = self
-        homeFeedTable.dataSource = self
+        navigationController?.navigationBar.standardAppearance.setBackIndicatorImage(UIImage(systemName: "arrow.left")!.withAlignmentRectInsets(.init(top: 0, left: -10, bottom: 0, right: 0)), transitionMaskImage: UIImage(systemName: "arrow.left")!.withAlignmentRectInsets(.init(top: 0, left: -10, bottom: 0, right: 0)))
+        navigationController?.navigationBar.tintColor = UIColor.systemGray
+        navigationItem.backButtonTitle = ""
         
-        let headerView = DashboardUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300))
-        homeFeedTable.tableHeaderView = headerView
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        homeFeedTable.frame = view.bounds
-    }
-}
-
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
-            return UITableViewCell()
-        }
+        view.addSubview(profileNavBar)
         
-        return cell
+        setBackground()
+        applyHomeVCConstraints()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+    func setBackground() {
+        
+        let bg = UIImage(named: "background")
+        
+        var imageView: UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = bg
+        imageView.center = view.center
+        
+        view.addSubview(imageView)
+        
+        self.view.sendSubviewToBack(imageView)
     }
     
+    func applyHomeVCConstraints() {
+        let profileNavBarConstraints = [
+            profileNavBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
+            profileNavBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+            profileNavBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+            profileNavBar.heightAnchor.constraint(equalToConstant: 50)
+        ]
+        
+        NSLayoutConstraint.activate(profileNavBarConstraints)
+    }
 }
