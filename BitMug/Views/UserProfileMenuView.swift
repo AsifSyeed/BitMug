@@ -32,6 +32,7 @@ class UserProfileMenuView: UIView {
         $0.spacing = 15
         $0.alignment = .center
         $0.distribution = .equalSpacing
+        $0.translatesAutoresizingMaskIntoConstraints = false
         
         return $0
     }(UIStackView())
