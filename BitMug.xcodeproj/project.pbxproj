@@ -14,6 +14,8 @@
 		87321CBE2844BCF10051C298 /* BitMug.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87321CBC2844BCF10051C298 /* BitMug.xcdatamodeld */; };
 		87321CC02844BCF30051C298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87321CBF2844BCF30051C298 /* Assets.xcassets */; };
 		87321CC32844BCF30051C298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87321CC12844BCF30051C298 /* LaunchScreen.storyboard */; };
+		873C81E8284A737600702413 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C81E7284A737600702413 /* APICaller.swift */; };
+		873C81EB284A770200702413 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C81EA284A770200702413 /* Crypto.swift */; };
 		87DABBF62848B6F800D70985 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF52848B6F800D70985 /* MainTabBarController.swift */; };
 		87DABBFA2848B74A00D70985 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF72848B74A00D70985 /* OffersViewController.swift */; };
 		87DABBFB2848B74A00D70985 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF82848B74A00D70985 /* AccountViewController.swift */; };
@@ -31,6 +33,8 @@
 		87321CBF2844BCF30051C298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87321CC22844BCF30051C298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87321CC42844BCF30051C298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		873C81E7284A737600702413 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		873C81EA284A770200702413 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		87DABBF52848B6F800D70985 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		87DABBF72848B74A00D70985 /* OffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		87DABBF82848B74A00D70985 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		87321CB22844BCF10051C298 /* BitMug */ = {
 			isa = PBXGroup;
 			children = (
+				873C81E9284A76D100702413 /* Models */,
+				873C81E6284A736000702413 /* Managers */,
 				87DABBF42848B6D200D70985 /* Views */,
 				87321CCA2844BD430051C298 /* Controllers */,
 				87321CB32844BCF10051C298 /* AppDelegate.swift */,
@@ -99,6 +105,22 @@
 				87321CB72844BCF10051C298 /* HomeViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		873C81E6284A736000702413 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				873C81E7284A737600702413 /* APICaller.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		873C81E9284A76D100702413 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				873C81EA284A770200702413 /* Crypto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		87DABBF42848B6D200D70985 /* Views */ = {
@@ -183,10 +205,12 @@
 				87DABBFE2848BAA300D70985 /* UserProfileMenuView.swift in Sources */,
 				87321CB82844BCF10051C298 /* HomeViewController.swift in Sources */,
 				87DABBFA2848B74A00D70985 /* OffersViewController.swift in Sources */,
+				873C81E8284A737600702413 /* APICaller.swift in Sources */,
 				87DABBFB2848B74A00D70985 /* AccountViewController.swift in Sources */,
 				87321CB42844BCF10051C298 /* AppDelegate.swift in Sources */,
 				87DABBF62848B6F800D70985 /* MainTabBarController.swift in Sources */,
 				87321CB62844BCF10051C298 /* SceneDelegate.swift in Sources */,
+				873C81EB284A770200702413 /* Crypto.swift in Sources */,
 				87321CBE2844BCF10051C298 /* BitMug.xcdatamodeld in Sources */,
 				87DABBFC2848B74A00D70985 /* MenuViewController.swift in Sources */,
 			);

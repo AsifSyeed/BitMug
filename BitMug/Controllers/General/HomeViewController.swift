@@ -28,6 +28,8 @@ class HomeViewController: UIViewController {
         
         setBackground()
         applyHomeVCConstraints()
+        
+        fetchData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -61,5 +63,17 @@ class HomeViewController: UIViewController {
         ]
         
         NSLayoutConstraint.activate(profileNavBarConstraints)
+    }
+    
+    private func fetchData() {
+        APICaller.shared.getAllCryptoData { results in
+            
+            switch results {
+            case .success(let cryptos):
+                print(cryptos)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
