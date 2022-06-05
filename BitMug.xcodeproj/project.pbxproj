@@ -16,6 +16,8 @@
 		87321CC32844BCF30051C298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87321CC12844BCF30051C298 /* LaunchScreen.storyboard */; };
 		873C81E8284A737600702413 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C81E7284A737600702413 /* APICaller.swift */; };
 		873C81EB284A770200702413 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C81EA284A770200702413 /* Crypto.swift */; };
+		877D8505284A90B6000814F5 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877D8504284A90B6000814F5 /* DashboardTableViewCell.swift */; };
+		87962B6F284BBEA100265B00 /* DashBoardDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87962B6E284BBEA100265B00 /* DashBoardDataView.swift */; };
 		87DABBF62848B6F800D70985 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF52848B6F800D70985 /* MainTabBarController.swift */; };
 		87DABBFA2848B74A00D70985 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF72848B74A00D70985 /* OffersViewController.swift */; };
 		87DABBFB2848B74A00D70985 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DABBF82848B74A00D70985 /* AccountViewController.swift */; };
@@ -35,6 +37,8 @@
 		87321CC42844BCF30051C298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		873C81E7284A737600702413 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		873C81EA284A770200702413 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		877D8504284A90B6000814F5 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		87962B6E284BBEA100265B00 /* DashBoardDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardDataView.swift; sourceTree = "<group>"; };
 		87DABBF52848B6F800D70985 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		87DABBF72848B74A00D70985 /* OffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		87DABBF82848B74A00D70985 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -123,10 +127,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		877D8506284A90B9000814F5 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				877D8504284A90B6000814F5 /* DashboardTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		87DABBF42848B6D200D70985 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				877D8506284A90B9000814F5 /* Custom Cells */,
 				87DABBFD2848BAA300D70985 /* UserProfileMenuView.swift */,
+				87962B6E284BBEA100265B00 /* DashBoardDataView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,9 +222,11 @@
 				873C81E8284A737600702413 /* APICaller.swift in Sources */,
 				87DABBFB2848B74A00D70985 /* AccountViewController.swift in Sources */,
 				87321CB42844BCF10051C298 /* AppDelegate.swift in Sources */,
+				877D8505284A90B6000814F5 /* DashboardTableViewCell.swift in Sources */,
 				87DABBF62848B6F800D70985 /* MainTabBarController.swift in Sources */,
 				87321CB62844BCF10051C298 /* SceneDelegate.swift in Sources */,
 				873C81EB284A770200702413 /* Crypto.swift in Sources */,
+				87962B6F284BBEA100265B00 /* DashBoardDataView.swift in Sources */,
 				87321CBE2844BCF10051C298 /* BitMug.xcdatamodeld in Sources */,
 				87DABBFC2848B74A00D70985 /* MenuViewController.swift in Sources */,
 			);

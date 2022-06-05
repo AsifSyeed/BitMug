@@ -15,6 +15,21 @@ class HomeViewController: UIViewController {
         return $0
     }(UserProfileMenuView(text: "nemes1s"))
     
+    lazy var homeTableView: UITableView = {
+        
+        $0.register(DashboardTableViewCell.self, forCellReuseIdentifier: DashboardTableViewCell.identifier)
+        $0.backgroundColor = .clear
+        $0.separatorStyle = .none
+        $0.delegate = self
+        $0.dataSource = self
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+        $0.showsVerticalScrollIndicator = false
+        
+        return $0
+        
+    }(UITableView())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +39,10 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.systemGray
         navigationItem.backButtonTitle = ""
         
+        DashBoardDataView.delegate = self
+        
         view.addSubview(profileNavBar)
+        view.addSubview(homeTableView)
         
         setBackground()
         applyHomeVCConstraints()
@@ -62,7 +80,15 @@ class HomeViewController: UIViewController {
             profileNavBar.heightAnchor.constraint(equalToConstant: 50)
         ]
         
+        let homeTableViewConstraints = [
+            homeTableView.topAnchor.constraint(equalTo: profileNavBar.bottomAnchor, constant: -5),
+            homeTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            homeTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            homeTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ]
+        
         NSLayoutConstraint.activate(profileNavBarConstraints)
+        NSLayoutConstraint.activate(homeTableViewConstraints)
     }
     
     private func fetchData() {
@@ -74,6 +100,37 @@ class HomeViewController: UIViewController {
             case .failure(let error):
                 print(error)
             }
+        }
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DashboardTableViewCell.identifier) as? DashboardTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.configuration()
+        cell.selectionStyle = .none
+        
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+}
+
+extension HomeViewController: DashboardDataViewDelegate {
+    
+    func homeTableViewReload() {
+        DispatchQueue.main.async {
+            self.homeTableView.reloadData()
         }
     }
 }
